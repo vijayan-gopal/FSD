@@ -1,0 +1,123 @@
+s3 bucket - to deploy app in AWS with no backend
+
+ng build --prod
+
+C:\Users\gopal\Documents\Vijayan\FSD\csk\mccl\docs\main.6f19dcab6aa9adfa3527.js
+Git hub: explored in youtube myself
+https://www.youtube.com/watch?v=h1e8oC7g0Ps&list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD
+
+Azure: storage 
+subscription ID: e117bbfa-abd1-4926-89fb-0c7e7acecef6
+Resource Group:
+vijayan-RSG
+
+Serviceplane name: mcclAppservicePlan
+{
+  "adminSiteName": null,
+  "appServicePlanName": "mcclAppservicePlan",
+  "geoRegion": "East US",
+  "hostingEnvironmentProfile": null,
+  "id": "/subscriptions/e117bbfa-abd1-4926-89fb-0c7e7acecef6/resourceGroups/vijayan-RSG/providers/Microsoft.Web/serverfarms/mcclAppservicePlan",
+  "isSpot": false,
+  "kind": "app",
+  "location": "East US",
+  "maximumNumberOfWorkers": 1,
+  "name": "mcclAppservicePlan",
+  "numberOfSites": 0,
+  "perSiteScaling": false,
+  "provisioningState": "Succeeded",
+  "reserved": false,
+  "resourceGroup": "vijayan-RSG",
+  "sku": {
+    "capabilities": null,
+    "capacity": 0,
+    "family": "F",
+    "locations": null,
+    "name": "F1",
+    "size": "F1",
+    "skuCapacity": null,
+    "tier": "Free"
+  },
+  "spotExpirationTime": null,
+  "status": "Ready",
+  "subscription": "e117bbfa-abd1-4926-89fb-0c7e7acecef6",
+  "tags": null,
+  "targetWorkerCount": 0,
+  "targetWorkerSizeId": 0,
+  "type": "Microsoft.Web/serverfarms",
+  "workerTierName": null
+}
+
+After creating webapp:
+{
+  "availabilityState": "Normal",
+  "clientAffinityEnabled": true,
+  "clientCertEnabled": false,
+  "cloningInfo": null,
+  "containerSize": 0,
+  "dailyMemoryTimeQuota": 0,
+  "defaultHostName": "mymcclapp.azurewebsites.net",
+  "enabled": true,
+  "enabledHostNames": [
+    "mymcclapp.azurewebsites.net",
+    "mymcclapp.scm.azurewebsites.net"
+  ],
+  "ftpPublishingUrl": "ftp://waws-prod-blu-109.ftp.azurewebsites.windows.net/site/wwwroot",
+  "hostNameSslStates": [
+    {
+      "hostType": "Standard",
+      "ipBasedSslResult": null,
+      "ipBasedSslState": "NotConfigured",
+      "name": "mymcclapp.azurewebsites.net",
+      "sslState": "Disabled",
+      "thumbprint": null,
+      "toUpdate": null,
+      "toUpdateIpBasedSsl": null,
+      "virtualIp": null
+    },
+    {
+      "hostType": "Repository",
+      "ipBasedSslResult": null,
+      "ipBasedSslState": "NotConfigured",
+      "name": "mymcclapp.scm.azurewebsites.net",
+      "sslState": "Disabled",
+      "thumbprint": null,
+      "toUpdate": null,
+      "toUpdateIpBasedSsl": null,
+      "virtualIp": null
+    }
+  ],
+  "hostNames": [
+    "mymcclapp.azurewebsites.net"
+  ],
+  "hostNamesDisabled": false,
+  "hostingEnvironmentProfile": null,
+  "httpsOnly": false,
+  "id": "/subscriptions/e117bbfa-abd1-4926-89fb-0c7e7acecef6/resourceGroups/vijayan-RSG/providers/Microsoft.Web/sites/mymcclapp",
+  "identity": null,
+  "isDefaultContainer": null,
+  "kind": "app",
+  "lastModifiedTimeUtc": "2018-08-15T17:20:59.410000",
+  "location": "East US",
+  "maxNumberOfWorkers": null,
+  "name": "mymcclapp",
+  "outboundIpAddresses": "40.114.106.25,40.114.109.196,40.87.40.14,40.87.44.79,40.87.47.202",
+  "possibleOutboundIpAddresses": "40.114.106.25,40.114.109.196,40.87.40.14,40.87.44.79,40.87.47.202,40.87.41.144,40.87.47.137,13.68.136.18",
+  "repositorySiteName": "mymcclapp",
+  "reserved": false,
+  "resourceGroup": "vijayan-RSG",
+  "scmSiteAlsoStopped": false,
+  "serverFarmId": "/subscriptions/e117bbfa-abd1-4926-89fb-0c7e7acecef6/resourceGroups/vijayan-RSG/providers/Microsoft.Web/serverfarms/mcclAppservicePlan",
+  "siteConfig": null,
+  "slotSwapStatus": null,
+  "snapshotInfo": null,
+  "state": "Running",
+  "suspendedTill": null,
+  "tags": null,
+  "targetSwapSlot": null,
+  "trafficManagerHostNames": null,
+  "type": "Microsoft.Web/sites",
+  "usageState": "Normal"
+}
+
+mymcclapp.azurewebsites.net

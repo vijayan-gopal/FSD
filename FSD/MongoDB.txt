@@ -1,0 +1,8 @@
+mongod --dbpath /dbdata - to start db
+GUI:
+mongobooster
+robomongo
+
+https://docs.mongodb.com/manual/reference/mongo-shell/
+
+Ashutosh Tripathi 2: https://docs.mongodb.com/manual/reference/sql-comparison/

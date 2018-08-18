@@ -1,0 +1,7 @@
+nodejs API: to create thread of nodejs event to run on multiple cores/instance...if 4 CPU e.g.
+
+To find no. of CPUs
+numcpus = require('os').cpus().length
+
+handle async flows:
+promise, cps
